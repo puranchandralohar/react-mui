@@ -1,3 +1,4 @@
+import { MuiButtonGroup } from "./components/MuiButtonGroup";
 import { MuiButtons } from "./components/MuiButtons";
 import { TextFields } from "./components/TextFields";
 import { Typo } from "./components/Typo";
@@ -8,7 +9,8 @@ function App() {
     <>
      {/* <Typo/> */}
      {/* <MuiButtons/> */}
-     <TextFields/>
+     {/* <TextFields/> */}
+     <MuiButtonGroup />
     </>
   );
 }
