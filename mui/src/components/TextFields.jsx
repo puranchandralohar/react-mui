@@ -1,10 +1,11 @@
 import React from 'react'
 
-import { Stack, TextField, InputAdornment } from '@mui/material'
+import { Stack, Typography, TextField, InputAdornment, Button} from '@mui/material'
 export const TextFields = () => {
   return (
     
-    <Stack spacing={4} >
+    <Stack spacing={4}>
+      <Typography variant='h2' color='secondary'>TextField</Typography>
         <Stack spacing={3} direction='row'>
             <TextField label='Name' variant='outlined' color='secondary'/>
             <TextField label='Name' variant='filled'/>
@@ -28,6 +29,10 @@ export const TextFields = () => {
               endAdornment:<InputAdornment position='end'>Kg</InputAdornment>
             }}/>
              <TextField label='Error field' variant='outlined' error/>
+             <TextField 
+             sx={{margin:0,padding:0}}
+            />
+            <Button variant='contained' disableElevation disableRipple>Subscribe</Button>
         </Stack>
     </Stack>
   )
